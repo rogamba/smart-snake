@@ -26,6 +26,7 @@ To every input vector p, corresponds an output vector t (2x1) of 2 bits that ind
 * -1, 1: up
 * 1, -1: left
 * 1, 1: down
+
 Having the combination of inputs and outputs we can generate the training set and P and T matrices
 
 ## Training the net
