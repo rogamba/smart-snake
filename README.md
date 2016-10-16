@@ -5,7 +5,7 @@ Supervised Hebbian learning for the snake game
 Snake game built with python and opengl that uses a training set recorded from a player to build a Hebbian non auto associative neural network to predict the output of each movement based
 on the position of the head of the snake relative to the position of the apple
 
-# Input Matrix
+## Input Matrix
 To generate the input vectors of the matrix, we consider the following variables:  
 * Position of the food relative to the position of the food and it's direction (3 bits
 * Distance of the food relative to the head of the snake (5 bits)
@@ -20,7 +20,7 @@ And alse there can be combinations of these values, for example 110 would indica
 The last 5 bits of the input vectors indicate the distance between the apple and the head, assuming that in the training set the decreasing of this 5 bits value
 will indicate that the head is moving towards the right direction.
 
-# Output vector
+## Output vector
 To every input vector p, corresponds an output vector t (2x1) of 2 bits that indicates the direction of the next move of the snake, the values can be:
 * -1, -1: right
 * -1, 1: up
@@ -41,6 +41,6 @@ python snake.py
 3. Run the snake again with the previous command, this time select run
 4. Watch how good your training was
 
-# Improvements
+## Improvements
 * Add backpropagation algorithm to improve learning
 * Make more user-friendly the gui
